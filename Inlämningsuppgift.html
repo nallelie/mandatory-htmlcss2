@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inlämningsuppgift</title>
+    <style>
+        header {
+            background-color: rgba(199, 28, 28, 0.836);
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            align-items: center;
+        }
+
+        .linkitems {
+            margin: 20px;
+            padding-left: 20px;
+            font-size: 20px;
+            width: 150px;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .linkitems:hover {
+            background-color: rgba(126, 20, 20, 0.267);
+        }
+
+        body {
+            margin: 0 auto;
+            background-color: grey;
+        }
+
+        .row {
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .small_image {
+            height: 300px;
+            margin: 20px;
+            transition: transform 1s;
+            box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
+            min-width: 150px;
+
+        }
+
+        .big_image {
+            height: 500px;
+            margin: 20px;
+            transition: transform .8s;
+            box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
+            min-width: 150px;
+
+        }
+
+
+        main {
+            padding-top: 100px;
+        }
+
+        footer {
+            height: 30px;
+            background-color: rgba(199, 28, 28, 0.973);
+        }
+
+        @media screen and (min-width: 700px) {
+            .big_image {
+                width: 41.5%
+            }
+
+            .small_image {
+                width: 15%
+            }
+
+            .big_image:hover {
+                transform: scale(1.1);
+            }
+
+            .small_image:hover {
+                transform: scale(1.2);
+            }
+
+            
+        }
+
+        @media screen and (max-width: 699px) {
+            .big_image {
+                width: 96%
+            }
+
+            .small_image {
+                width: 40%
+            }
+
+            .links {
+                display: none;
+            }
+
+            header {
+                justify-content: center;
+                height: 15%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin: 20px;">The Best Streaming Site</h1>
+        <div class="links">
+            <a href="" class="linkitems">Old Movies</a>
+            <a href="" class="linkitems">New Movies</a>
+            <a href="" class="linkitems">Medium old Movies</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster1.png?raw=true"
+                alt="terminator" class="small_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster10.png?raw=true"
+                alt="batman" class="small_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster11.png?raw=true"
+                alt="hercules" class="small_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster12.png?raw=true"
+                alt="kindergarten cop" class="small_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster2.png?raw=true"
+                alt="commando" class="small_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster5.png?raw=true"
+                alt="terminator" class="small_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster7.png?raw=true"
+                alt="junior" class="small_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster8.png?raw=true"
+                alt="jingle" class="small_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster9.png?raw=true"
+                alt="conan" class="small_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster4.png?raw=true"
+                alt="total lies" class="small_image">
+
+        </div>
+        <div class="row">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster3.png?raw=true"
+                alt="total recall" class="big_image">
+            <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster6.png?raw=true"
+                alt="running man" class="big_image">
+        </div>
+    </main>
+    <footer>&copy;Annelie Corp.</footer>
+</body>
+
+</html>
