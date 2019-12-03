@@ -12,6 +12,7 @@
             position: fixed;
             width: 100%;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
         }
 
         .links {
@@ -54,6 +55,8 @@
             transition: transform 1s;
             box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
             min-width: 150px;
+            width: 15%;
+            flex-grow: 1;
 
         }
 
@@ -62,7 +65,7 @@
             transition: transform .8s;
             box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
             min-width: 150px;
-
+            flex-grow: 1;
         }
 
 
@@ -76,14 +79,6 @@
         }
 
         @media screen and (min-width: 700px) {
-            .big_image {
-                width: 41.5%;
-            }
-
-
-            .big_image:hover {
-                transform: scale(1.1);
-            }
 
             .small_image:hover {
                 transform: scale(1.2);
@@ -97,9 +92,6 @@
         }
 
         @media screen and (max-width: 699px) {
-            .big_image {
-                width: 96%;
-            }
 
             .small_image {
                 width: 30%;
@@ -162,13 +154,10 @@
                 alt="conan" class="small_image">
             <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster4.png?raw=true"
                 alt="total lies" class="small_image">
-
-        </div>
-        <div class="row">
             <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster3.png?raw=true"
-                alt="total recall" class="big_image">
+                alt="total recall" class="small_image">
             <img src="https://github.com/LinkNorth/HTMLCSS/blob/master/labs/lab2/resources/poster6.png?raw=true"
-                alt="running man" class="big_image">
+                alt="running man" class="small_image">
         </div>
     </main>
     <footer>&copy;Annelie Corp.</footer>
