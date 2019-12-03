@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inlämningsuppgift</title>
     <style>
         header {
@@ -10,6 +11,7 @@
             align-items: center;
             position: fixed;
             width: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         .links {
@@ -35,6 +37,9 @@
         body {
             margin: 0 auto;
             background-color: grey;
+            background-image: url(https://ak5.picdn.net/shutterstock/videos/1581355/thumb/1.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;            
         }
 
         .row {
@@ -45,7 +50,6 @@
         }
 
         .small_image {
-            height: 300px;
             margin: 20px;
             transition: transform 1s;
             box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
@@ -54,7 +58,6 @@
         }
 
         .big_image {
-            height: 500px;
             margin: 20px;
             transition: transform .8s;
             box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
@@ -77,9 +80,6 @@
                 width: 41.5%;
             }
 
-            .small_image {
-                width: 15%;
-            }
 
             .big_image:hover {
                 transform: scale(1.1);
@@ -87,8 +87,12 @@
 
             .small_image:hover {
                 transform: scale(1.2);
+                
             }
-
+            img
+            {
+                width: 180px;
+            }
             
         }
 
@@ -99,7 +103,6 @@
 
             .small_image {
                 width: 30%;
-                height: 110px;
 
             }
 
@@ -111,19 +114,28 @@
                 justify-content: center;
                 height: 15%;
             }
+            img
+            {
+                width: 80px;
+            }
 
-
+            body
+            {
+                background-size: auto;
+                background-repeat: repeat-y;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
+        <img src="https://images.pond5.com/film-reel-red-loop-footage-022335083_iconl.jpeg" alt="">
         <h1 style="margin: 20px;">The Best Streaming Site</h1>
         <div class="links">
-            <a href="" class="linkitems">Old Movies</a>
+            <strong><a href="" class="linkitems">Old Movies</a>
             <a href="" class="linkitems">New Movies</a>
-            <a href="" class="linkitems">Medium old Movies</a>
+            <a href="" class="linkitems">Medium old Movies</a></strong>
         </div>
     </header>
 
